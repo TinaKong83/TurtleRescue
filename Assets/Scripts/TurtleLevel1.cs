@@ -15,7 +15,7 @@ public class TurtleLevel1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < 4)
+        if (transform.position.y >= 0.1820 && transform.position.y < 4)
         {
             transform.Translate(0, speed * Time.deltaTime, 0);
 

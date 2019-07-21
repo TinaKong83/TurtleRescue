@@ -5,7 +5,10 @@ using UnityEngine;
 public class SodaBottleControl3 : MonoBehaviour
 {
     [SerializeField]
+    private Transform turtlePosition;
+    [SerializeField]
     private Transform garbageCanPlace;
+
     private Vector2 initialPosition;
     private float deltaX, deltaY;
     public static bool isLocked;
@@ -16,13 +19,13 @@ public class SodaBottleControl3 : MonoBehaviour
     {
         initialPosition = transform.position;
         //transform.Translate(0, -speed * Time.deltaTime, 0);
-
     }
 
     // Touch phase documentation: https://docs.unity3d.com/ScriptReference/TouchPhase.html
     // Update is called once per frame
     void Update()
     {
+        //transform.Translate(0, -speed * Time.deltaTime, 0);
 
         if (Input.touchCount > 0 && !isLocked)
         {
@@ -49,10 +52,11 @@ public class SodaBottleControl3 : MonoBehaviour
                     }
                     break;
                 case TouchPhase.Ended:
-                    if (Mathf.Abs(transform.position.x - garbageCanPlace.position.x) <= 0.5f
-                        && Mathf.Abs(transform.position.y - garbageCanPlace.position.y) <= 0.5f)
+                    if (Mathf.Abs(transform.position.x - garbageCanPlace.position.x) <= 4f
+                        && Mathf.Abs(transform.position.y - garbageCanPlace.position.y) <= 4f)
                     {
                         transform.position = new Vector2(garbageCanPlace.position.x, garbageCanPlace.position.y);
+                        turtlePosition.Translate(0.0f, 0.5f, 0.0f);
                         isLocked = true;
                     }
                     else

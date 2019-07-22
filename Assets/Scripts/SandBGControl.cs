@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class SandBGControl : MonoBehaviour
 {
-    //public float speed = 3f;
-    //Vector2 offset;
+    public AudioClip MusicClip; //holds our music and sound effects
+    public AudioSource MusicSource;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        MusicSource.clip = MusicClip;
+        MusicSource.Play();
+
     }
 
     // Update is called once per frame

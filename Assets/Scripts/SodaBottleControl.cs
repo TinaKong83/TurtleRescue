@@ -9,6 +9,9 @@ public class SodaBottleControl : MonoBehaviour
     [SerializeField]
     private Transform garbageCanPlace;
 
+    public AudioClip MusicClip; //holds our music and sound effects
+    public AudioSource MusicSource;
+
     private Vector2 initialPosition;
     private float deltaX, deltaY;
     public static bool isLocked;
@@ -52,11 +55,13 @@ public class SodaBottleControl : MonoBehaviour
                     }
                     break;
                 case TouchPhase.Ended:
-                    if (Mathf.Abs(transform.position.x - garbageCanPlace.position.x) <= 2.5f
-                        && Mathf.Abs(transform.position.y - garbageCanPlace.position.y) <= 2.5f)
+                    if (Mathf.Abs(transform.position.x - garbageCanPlace.position.x) <= 2f
+                        && Mathf.Abs(transform.position.y - garbageCanPlace.position.y) <= 2f)
                     {
                         transform.position = new Vector2(garbageCanPlace.position.x, garbageCanPlace.position.y);
                         turtlePosition.Translate(0.0f, 0.5f, 0.0f);
+                        MusicSource.clip = MusicClip;
+                        MusicSource.Play();
                         isLocked = true;
                     }
                     else

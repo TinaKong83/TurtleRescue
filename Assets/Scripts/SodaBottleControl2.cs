@@ -9,6 +9,9 @@ public class SodaBottleControl2 : MonoBehaviour
     [SerializeField]
     private Transform garbageCanPlace;
 
+    public AudioClip MusicClip; //holds our music and sound effects
+    public AudioSource MusicSource;
+
     private Vector2 initialPosition;
     private float deltaX, deltaY;
     public static bool isLocked;
@@ -57,6 +60,8 @@ public class SodaBottleControl2 : MonoBehaviour
                     {
                         transform.position = new Vector2(garbageCanPlace.position.x, garbageCanPlace.position.y);
                         turtlePosition.Translate(0.0f, 0.5f, 0.0f);
+                        MusicSource.clip = MusicClip;
+                        MusicSource.Play();
                         isLocked = true;
                     }
                     else

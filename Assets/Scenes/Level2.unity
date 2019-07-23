@@ -306,8 +306,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e1a6051d0c4b4681f8102aa5d2cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turtleSpeed: 3
-  maxPos: 2.15
 --- !u!50 &285978104
 Rigidbody2D:
   serializedVersion: 4

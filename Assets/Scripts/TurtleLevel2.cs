@@ -5,25 +5,18 @@ using UnityEngine;
 public class TurtleLevel2 : MonoBehaviour
 {
 
-    public float turtleSpeed = 2;
-    public float maxPos = 2.15f; 
-
-    Vector3 position; 
-
     // Start is called before the first frame update
     void Start()
     {
-        position = transform.position; 
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        position.x += Input.GetAxis("Horizontal") * turtleSpeed * Time.deltaTime;
+        float temp = Input.acceleration.x;
 
-        position.x = Mathf.Clamp(position.x, -maxPos, maxPos);
-
-        transform.position = position;
+        transform.Translate(temp, 0f, 0f);
     }
 
     void OnCollisionEnter2D(Collision2D col)

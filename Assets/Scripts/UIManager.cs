@@ -18,11 +18,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-<<<<<<< HEAD
-        scoreText.text = "Sharks avoided: " + score; 
-=======
-        scoreText.text = "Score: " + score; 
->>>>>>> d5a0d4266e5917c79e0edad56dd33358448d29ee
+        scoreText.text = "Score: " + score;
     }
 
     void scoreUpdate()

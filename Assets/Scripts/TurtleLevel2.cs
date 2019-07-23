@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurtleController : MonoBehaviour
+public class TurtleLevel2 : MonoBehaviour
 {
 
-    public float turtleSpeed;
+    public float turtleSpeed = 2;
     public float maxPos = 2.15f; 
 
     Vector3 position; 
@@ -24,5 +24,13 @@ public class TurtleController : MonoBehaviour
         position.x = Mathf.Clamp(position.x, -maxPos, maxPos);
 
         transform.position = position;
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "EnemyShark")
+        {
+            Destroy(gameObject);
+        }
     }
 }

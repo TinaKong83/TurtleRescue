@@ -711,14 +711,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - Congratulations! You helped the sea turtle make it to the ocean! The turtle
-      can now look for food! But now it must be protected by other dangers..
-    - Due to changes in sea temperatures, a school of sharks is migrating earlier
-      and is in the sea turtle's way! Help the sea turtle avoid the sharks by turning
-      your phone left and right
+    - 'Congratulations! You helped the sea turtle make it to the ocean! The turtle
+      can now look for food! '
+    - 'But now it must be protected by other dangers... Due to changes in sea temperatures,
+      a school of sharks is migrating earlier! '
+    - 'Help the sea turtle avoid the sharks by turning your phone left and right.  '
     - Once they are gone, you will have the chance to help the sea turtle figure out
-      if what it's about to eat is trash or jellyfish. We'll give you a practice round
-      now!
+      if what it's about to eat is trash or jellyfish.
+    - We'll give you a practice round on choosing between food vs litter now!
 --- !u!95 &727139432
 Animator:
   serializedVersion: 3

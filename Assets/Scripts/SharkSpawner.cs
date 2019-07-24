@@ -8,16 +8,15 @@ public class SharkSpawner : MonoBehaviour
     public float maxPos = 2f;
     float delayTimer = 8f;
     float counter = 0f;  
-    float timer; 
+    float timer;
+    int sharks; 
 
     // Start is called before the first frame update
     void Start()
     {
         timer = delayTimer;
 
-        Vector3 sharkPos = new Vector3(Random.Range(-maxPos, maxPos), transform.position.y, transform.position.z);
-
-        Instantiate(shark, sharkPos, transform.rotation);
+        MakeSharks();
     }
 
     // Update is called once per frame
@@ -30,13 +29,18 @@ public class SharkSpawner : MonoBehaviour
             {
                 counter += 1f;
             }
-
-            Vector3 sharkPos = new Vector3(Random.Range(-maxPos, maxPos), transform.position.y, transform.position.z);
-
-            Instantiate(shark, sharkPos, transform.rotation);
-            
-            timer = delayTimer - counter; 
+            if (sharks < 16)
+            {
+                MakeSharks(); 
+            }
+            timer = delayTimer - counter;
         }
+    }
 
+    void MakeSharks()
+    {
+        Vector3 sharkPos = new Vector3(Random.Range(-maxPos, maxPos), transform.position.y, transform.position.z);
+        Instantiate(shark, sharkPos, transform.rotation);
+        sharks += 1; 
     }
 }

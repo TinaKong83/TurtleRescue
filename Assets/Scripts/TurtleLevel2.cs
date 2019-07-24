@@ -26,7 +26,7 @@ public class TurtleLevel2 : MonoBehaviour
         if (transform.position.x < -3.3f)
 
         {
-            transform.Translate(-4f, 0f, 0f);
+            transform.Translate(-3.3f, 0f, 0f);
 
         }
     }

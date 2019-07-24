@@ -5,6 +5,8 @@ using UnityEngine;
 public class TurtleLevel2 : MonoBehaviour
 {
 
+    public UIManager ui;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,7 @@ public class TurtleLevel2 : MonoBehaviour
         if (col.gameObject.tag == "EnemyShark")
         {
             Destroy(gameObject);
+            ui.GameOverActivated();
         }
     }
 }

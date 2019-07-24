@@ -3,21 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; 
 
-public class UIManager : MonoBehaviour
+public class UIManager: MonoBehaviour
 {
 
+    public Button[] buttons;
     public Text scoreText;
     int score;
     float delayTimer = 4.5f;
     float timer;
-    int counter; 
+    bool gameOver; 
 
     // Start is called before the first frame update
     void Start()
     {
         score = 0;
-        counter = 0; 
-        timer = delayTimer; 
+        timer = delayTimer;
+        gameOver = false;
     }
 
     // Update is called once per frame
@@ -27,7 +28,7 @@ public class UIManager : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0 && score < 16)
         {
-            scoreUpdate();
+            ScoreUpdate();
             if (score == 1)
             {
                 delayTimer = 8f; 
@@ -55,8 +56,26 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    void scoreUpdate()
+    void ScoreUpdate()
     {
-        score += 1; 
+        if (gameOver == false)
+        {
+            score += 1;
+        }
+    }
+
+    public void Exit()
+    {
+        Application.Quit(); 
+    }
+
+    public void GameOverActivated()
+    {
+        gameOver = true; 
+
+        foreach(Button button in buttons)
+        {
+            button.gameObject.SetActive(true);
+        }
     }
 }

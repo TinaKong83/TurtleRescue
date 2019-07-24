@@ -17,6 +17,18 @@ public class TurtleLevel2 : MonoBehaviour
         float temp = Input.acceleration.x;
 
         transform.Translate(temp, 0f, 0f);
+
+        if (transform.position.x > 3.3f)
+        {
+            transform.Translate(3.3f, 0f, 0f);
+        }
+
+        if (transform.position.x < -3.3f)
+
+        {
+            transform.Translate(-4f, 0f, 0f);
+
+        }
     }
 
     void OnCollisionEnter2D(Collision2D col)

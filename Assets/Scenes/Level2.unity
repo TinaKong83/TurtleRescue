@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -262,8 +262,8 @@ Canvas:
   m_GameObject: {fileID: 108931420}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 349330112}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -272,7 +272,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &108931424
 RectTransform:
@@ -805,6 +805,7 @@ GameObject:
   - component: {fileID: 671224122}
   - component: {fileID: 671224121}
   - component: {fileID: 671224124}
+  - component: {fileID: 671224125}
   m_Layer: 0
   m_Name: Replay
   m_TagString: Untagged
@@ -934,6 +935,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8724128641d29a449c0f2dfb44f85c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &671224125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671224119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18eea6d2fa854c26ae3a8ff0b0e79cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons: []
+  scoreText: {fileID: 1600837173}
 --- !u!1 &811333521
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,6 +962,7 @@ GameObject:
   - component: {fileID: 811333524}
   - component: {fileID: 811333523}
   - component: {fileID: 811333526}
+  - component: {fileID: 811333527}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -1076,6 +1092,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8724128641d29a449c0f2dfb44f85c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &811333527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811333521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18eea6d2fa854c26ae3a8ff0b0e79cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons: []
+  scoreText: {fileID: 1600837173}
 --- !u!1 &1013891382
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,7 +1352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1600837173}
 --- !u!114 &1413300115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1424,8 +1454,9 @@ GameObject:
   - component: {fileID: 1600837172}
   - component: {fileID: 1600837174}
   - component: {fileID: 1600837173}
+  - component: {fileID: 1600837175}
   m_Layer: 0
-  m_Name: Score
+  m_Name: scoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1447,8 +1478,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 127, y: -51}
-  m_SizeDelta: {x: 191.9, y: 63.299988}
+  m_AnchoredPosition: {x: 172, y: -75.4}
+  m_SizeDelta: {x: 252.2, y: 112.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1600837173
 MonoBehaviour:
@@ -1472,11 +1503,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 9bfb893d17b52b74f93dab7405f1ac1e, type: 3}
-    m_FontSize: 30
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 55
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1492,6 +1523,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600837171}
   m_CullTransparentMesh: 1
+--- !u!114 &1600837175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600837171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18eea6d2fa854c26ae3a8ff0b0e79cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 671224121}
+  - {fileID: 811333523}
+  - {fileID: 1413300115}
+  scoreText: {fileID: 1600837173}
 --- !u!1 &1681779871
 GameObject:
   m_ObjectHideFlags: 0

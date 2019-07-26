@@ -7,7 +7,7 @@ public class UIManagerLevel1 : MonoBehaviour
 {
 
     public Button[] buttons;
-    public Button[] nextLevel; 
+    public Button[] nextLevel;
     public float timeStart = 20;
     public Text textBox;
     [SerializeField]

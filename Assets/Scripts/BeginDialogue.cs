@@ -21,7 +21,7 @@ public class BeginDialogue : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        animator.SetBool("isOpen", true);
+        animator.SetBool("IsOpen", true);
         //Debug.Log("Starting conversation");
         sentences.Clear();
 
@@ -61,7 +61,7 @@ public class BeginDialogue : MonoBehaviour
 
     public void EndDialogue()
     {
-        animator.SetBool("isOpen", false);
+        animator.SetBool("IsOpen", false);
         //Debug.Log("End of conversation");
     }
 

@@ -12,7 +12,7 @@ public class SodaBottleControl7 : MonoBehaviour
     public AudioSource MusicSource;
     private Vector2 initialPosition;
     private float deltaX, deltaY;
-    public static bool isLocked;
+    public bool isLocked;
     //public float speed = 1f;
 
     // Start is called before the first frame update

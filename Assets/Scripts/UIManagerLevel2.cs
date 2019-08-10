@@ -27,7 +27,6 @@ public class UIManagerLevel2 : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0 && score < 16)
         {
-            print("Update: " + gameOver);
             ScoreUpdate();
             if (score == 1)
             {
@@ -72,7 +71,6 @@ public class UIManagerLevel2 : MonoBehaviour
     public void GameOverActivated()
     {
         gameOver = true;
-        print("Game is now over: " + gameOver);
 
         foreach (Button button in buttons)
         {

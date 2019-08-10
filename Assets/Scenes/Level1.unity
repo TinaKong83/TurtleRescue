@@ -2467,7 +2467,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1394050032}
-        m_MethodName: 
+        m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2525,7 +2525,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1394050027}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ba15faee1834b84f8096056d81fcfc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 63f808c0922c54d538701ec3f1167ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1616186510

@@ -11,7 +11,7 @@ public class JellyFishMover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timer = 93.6f;
+        timer = 55f;
     }
 
     // Update is called once per frame
@@ -28,4 +28,6 @@ public class JellyFishMover : MonoBehaviour
             }
         }
     }
+
+
 }

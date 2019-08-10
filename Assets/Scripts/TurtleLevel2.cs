@@ -5,7 +5,7 @@ using UnityEngine;
 public class TurtleLevel2 : MonoBehaviour
 {
 
-    public UIManager ui;
+    public UIManagerLevel2 ui;
 
     // Start is called before the first frame update
     void Start()

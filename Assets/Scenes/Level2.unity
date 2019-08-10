@@ -286,7 +286,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 671224120}
-  - {fileID: 1257830756}
+  - {fileID: 939338901}
   - {fileID: 1600837172}
   - {fileID: 811333522}
   - {fileID: 1413300113}
@@ -473,7 +473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e1a6051d0c4b4681f8102aa5d2cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ui: {fileID: 1257830757}
+  ui: {fileID: 939338902}
 --- !u!50 &285978104
 Rigidbody2D:
   serializedVersion: 4
@@ -1076,6 +1076,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8724128641d29a449c0f2dfb44f85c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &939338900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 939338901}
+  - component: {fileID: 939338902}
+  m_Layer: 0
+  m_Name: UIManagerLevel2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &939338901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939338900}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1, y: 1, z: -8820.285}
+  m_LocalScale: {x: 94.94192, y: 94.94192, z: 94.94192}
+  m_Children: []
+  m_Father: {fileID: 108931424}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &939338902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939338900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c401beb21254260a66dcd661a0fe6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 671224121}
+  - {fileID: 811333523}
+  - {fileID: 1413300115}
+  scoreText: {fileID: 1600837173}
 --- !u!1 &1013891382
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,54 +1269,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1257830755
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1257830756}
-  - component: {fileID: 1257830757}
-  m_Layer: 0
-  m_Name: UIManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1257830756
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257830755}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2066345, y: -44.39203, z: 4.9717}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 108931424}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1257830757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257830755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18eea6d2fa854c26ae3a8ff0b0e79cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 671224121}
-  - {fileID: 811333523}
-  - {fileID: 1413300115}
-  scoreText: {fileID: 1600837173}
 --- !u!1 &1413300112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,7 +1433,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 172, y: -75.399994}
+  m_AnchoredPosition: {x: 172, y: -75.400024}
   m_SizeDelta: {x: 252.2, y: 112.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1600837173
@@ -1490,11 +1490,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18eea6d2fa854c26ae3a8ff0b0e79cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
   buttons:
   - {fileID: 671224121}
   - {fileID: 811333523}
   - {fileID: 1413300115}
   scoreText: {fileID: 1600837173}
+  score: 0
+  delayTimer: 4.5
+  timer: 0
+  gameOver: 0
 --- !u!1 &1681779871
 GameObject:
   m_ObjectHideFlags: 0

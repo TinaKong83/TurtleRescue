@@ -166,9 +166,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - Welcome to Turtle Rescue! Our game simulates the life cycle of a sea turtle
-      to illustrate the unfortunate impacts of climate change.
-    - In Level 1, you will helping a newly born turtle navigate its way to the ocean
+    - 'Welcome to Turtle Rescue! '
+    - 'Our game simulates the life cycle of a sea turtle to illustrate the unfortunate
+      impacts of climate change.
+
+'
+    - In Level 1, you will help a newly born turtle navigate its way to the ocean
       by dragging and dropping litter into the trash can.
     - Be sure the turtle reaches the ocean before your time is up! Good luck!
 --- !u!114 &26587593
@@ -419,8 +422,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.2, y: 43}
-  m_SizeDelta: {x: 434.3, y: 218}
+  m_AnchoredPosition: {x: -1.8, y: 43}
+  m_SizeDelta: {x: 546.1, y: 290}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &543926119
 MonoBehaviour:
@@ -444,7 +447,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 71c099d5408b6a941bafdcffa5277db5, type: 3}
-    m_FontSize: 30
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -500,8 +503,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 149, y: -122.1}
-  m_SizeDelta: {x: 163.3, y: 50.1}
+  m_AnchoredPosition: {x: 200, y: -170}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &657015893
 MonoBehaviour:
@@ -703,7 +706,7 @@ RectTransform:
   m_GameObject: {fileID: 903618608}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2693164, y: 1.2810078, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 543926118}
   - {fileID: 657015892}
@@ -713,7 +716,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 5.2, y: -121.5}
-  m_SizeDelta: {x: 525.8, y: 376.6}
+  m_SizeDelta: {x: 667.397, y: 482.4246}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &903618610
 MonoBehaviour:
@@ -1139,11 +1142,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 71c099d5408b6a941bafdcffa5277db5, type: 3}
-    m_FontSize: 42
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 45
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1218,7 +1221,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 71c099d5408b6a941bafdcffa5277db5, type: 3}
-    m_FontSize: 42
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1473,7 +1476,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 71c099d5408b6a941bafdcffa5277db5, type: 3}
-    m_FontSize: 25
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0

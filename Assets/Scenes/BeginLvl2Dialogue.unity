@@ -273,7 +273,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 71c099d5408b6a941bafdcffa5277db5, type: 3}
-    m_FontSize: 42
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -471,8 +471,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 149, y: -122.1}
-  m_SizeDelta: {x: 163.3, y: 50.1}
+  m_AnchoredPosition: {x: 200, y: -170}
+  m_SizeDelta: {x: 200, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &405805146
 MonoBehaviour:
@@ -623,11 +623,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 71c099d5408b6a941bafdcffa5277db5, type: 3}
-    m_FontSize: 42
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 42
+    m_MinSize: 0
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -935,12 +935,11 @@ MonoBehaviour:
     sentences:
     - 'Congratulations! You helped the sea turtle make it to the ocean! The turtle
       can now look for food! '
-    - 'But now it must be protected by other dangers... Due to changes in sea temperatures,
-      a school of sharks is migrating earlier! '
+    - 'Due to changes in sea temperatures, a school of sharks is migrating earlier! '
     - 'Help the sea turtle avoid the sharks by turning your phone left and right.
       Don''t let it touch any of the sharks!  '
-    - Once they are gone, you will have the chance to help the sea turtle figure out
-      if what it's about to eat is trash or jellyfish.
+    - 'Once they are gone, you will have the chance to help the sea turtle choose
+      between eating trash or jellyfish. '
     - We'll give you a practice round on choosing between food vs litter now!
 --- !u!95 &727139432
 Animator:
@@ -1176,7 +1175,7 @@ RectTransform:
   m_GameObject: {fileID: 1098297120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2693, y: 1.281, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 405805145}
   - {fileID: 2070993153}
@@ -1186,7 +1185,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 5.2, y: -21.5}
-  m_SizeDelta: {x: 525.8, y: 376.6}
+  m_SizeDelta: {x: 667.39, y: 482.424}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1098297122
 MonoBehaviour:
@@ -1479,10 +1478,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 71c099d5408b6a941bafdcffa5277db5, type: 3}
-    m_FontSize: 25
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1615,8 +1614,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.4, y: 30.7}
-  m_SizeDelta: {x: 420.6, y: 233.8}
+  m_AnchoredPosition: {x: 7.6, y: 44.7}
+  m_SizeDelta: {x: 544.4, y: 301.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2070993154
 MonoBehaviour:
@@ -1640,7 +1639,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 71c099d5408b6a941bafdcffa5277db5, type: 3}
-    m_FontSize: 30
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1

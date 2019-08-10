@@ -14,14 +14,13 @@ public class SodaBottleControl : MonoBehaviour
 
     private Vector2 initialPosition;
     private float deltaX, deltaY;
-    public static bool isLocked;
+    public bool isLocked;
     //public float speed = 1f;
 
     // Start is called before the first frame update
     void Start()
     {
         initialPosition = transform.position;
-        //transform.Translate(0, -speed * Time.deltaTime, 0);
     }
 
     // Touch phase documentation: https://docs.unity3d.com/ScriptReference/TouchPhase.html

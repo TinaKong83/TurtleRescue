@@ -256,6 +256,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 1
 --- !u!1 &154788221
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +285,7 @@ RectTransform:
   m_GameObject: {fileID: 154788221}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2043214, y: 2.688425, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1695991196}
   m_Father: {fileID: 887995234}
@@ -292,8 +293,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 51}
-  m_SizeDelta: {x: 210, y: 90}
+  m_AnchoredPosition: {x: 9, y: 81.9}
+  m_SizeDelta: {x: 459.4, y: 254.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &154788223
 MonoBehaviour:
@@ -433,7 +434,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 71c099d5408b6a941bafdcffa5277db5, type: 3}
-    m_FontSize: 16
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -669,6 +670,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &362322686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -786,7 +788,7 @@ RectTransform:
   m_GameObject: {fileID: 396873754}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2824686, y: 3.0758374, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 949957818}
   m_Father: {fileID: 887995234}
@@ -794,8 +796,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -185}
-  m_SizeDelta: {x: 132.3, y: 41.3}
+  m_AnchoredPosition: {x: -3.15, y: -140}
+  m_SizeDelta: {x: 268, y: 126}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &396873756
 MonoBehaviour:
@@ -934,6 +936,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &504509217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1081,10 +1084,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 71c099d5408b6a941bafdcffa5277db5, type: 3}
-    m_FontSize: 16
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1388,6 +1391,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &796573195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1616,6 +1620,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &944176603
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1763,10 +1768,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 71c099d5408b6a941bafdcffa5277db5, type: 3}
-    m_FontSize: 16
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1878,7 +1883,7 @@ RectTransform:
   m_GameObject: {fileID: 1051359242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.282469, y: 3.075837, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 186209194}
   m_Father: {fileID: 887995234}
@@ -1886,8 +1891,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 208}
-  m_SizeDelta: {x: 132.3, y: 41.3}
+  m_AnchoredPosition: {x: -17.1, y: 131}
+  m_SizeDelta: {x: 268, y: 126}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1051359244
 MonoBehaviour:
@@ -2230,6 +2235,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &1180364582
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2291,6 +2297,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &1206901567
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2408,7 +2415,7 @@ RectTransform:
   m_GameObject: {fileID: 1394050027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.282469, y: 3.075837, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1801460847}
   m_Father: {fileID: 887995234}
@@ -2416,8 +2423,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 61}
-  m_SizeDelta: {x: 132.3, y: 41.3}
+  m_AnchoredPosition: {x: -15, y: -25}
+  m_SizeDelta: {x: 268, y: 126}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1394050029
 MonoBehaviour:
@@ -2460,7 +2467,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1394050032}
-        m_MethodName: 
+        m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2518,7 +2525,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1394050027}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ba15faee1834b84f8096056d81fcfc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 63f808c0922c54d538701ec3f1167ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1616186510
@@ -2627,7 +2634,7 @@ RectTransform:
   m_GameObject: {fileID: 1668643425}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.282469, y: 3.075837, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 520182211}
   m_Father: {fileID: 887995234}
@@ -2635,8 +2642,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -345}
-  m_SizeDelta: {x: 132.3, y: 41.3}
+  m_AnchoredPosition: {x: -2, y: -303}
+  m_SizeDelta: {x: 268.7, y: 126.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1668643427
 MonoBehaviour:
@@ -2799,7 +2806,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 71c099d5408b6a941bafdcffa5277db5, type: 3}
-    m_FontSize: 17
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2918,6 +2925,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &1707895925
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3003,7 +3011,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 71c099d5408b6a941bafdcffa5277db5, type: 3}
-    m_FontSize: 16
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -3058,6 +3066,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &1857769175
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3181,6 +3190,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &1911946002
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class UIManagerLevel2 : MonoBehaviour
 {
     public Button[] buttons;
+    public Button[] nextLevel; 
     public Text scoreText;
     int score;
     float delayTimer = 4.5f;
@@ -27,7 +28,6 @@ public class UIManagerLevel2 : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0 && score < 16)
         {
-            print("Update: " + gameOver);
             ScoreUpdate();
             if (score == 1)
             {
@@ -64,19 +64,24 @@ public class UIManagerLevel2 : MonoBehaviour
         }
     }
 
-    public void Exit()
-    {
-        Application.Quit();
-    }
 
     public void GameOverActivated()
     {
         gameOver = true;
-        print("Game is now over: " + gameOver);
 
         foreach (Button button in buttons)
         {
             button.gameObject.SetActive(true);
+        }
+    }
+
+    public void GameWon()
+    {
+        gameOver = true;
+
+        foreach (Button next in nextLevel)
+        {
+            next.gameObject.SetActive(true);
         }
     }
 }

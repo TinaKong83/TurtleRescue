@@ -29,10 +29,21 @@ public class TurtleLevel2 : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "EnemyShark")
+        if (col.gameObject.tag == "EnemyShark" || col.gameObject.tag == "PlasticBag")
         {
             Destroy(gameObject);
             ui.GameOverActivated();
         }
+        else if (col.gameObject.tag == "Jellyfish")
+        {
+            Destroy(col.gameObject);
+            ui.GameWon(); 
+        }
+       
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }

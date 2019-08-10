@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JellyPlasticSpawner : MonoBehaviour
+public class ExitApplication : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,4 +15,10 @@ public class JellyPlasticSpawner : MonoBehaviour
     {
         
     }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
 }

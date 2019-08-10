@@ -473,7 +473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e1a6051d0c4b4681f8102aa5d2cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ui: {fileID: 0}
+  ui: {fileID: 939338902}
 --- !u!50 &285978104
 Rigidbody2D:
   serializedVersion: 4
@@ -1490,11 +1490,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18eea6d2fa854c26ae3a8ff0b0e79cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
   buttons:
   - {fileID: 671224121}
   - {fileID: 811333523}
   - {fileID: 1413300115}
   scoreText: {fileID: 1600837173}
+  score: 0
+  delayTimer: 4.5
+  timer: 0
+  gameOver: 0
 --- !u!1 &1681779871
 GameObject:
   m_ObjectHideFlags: 0

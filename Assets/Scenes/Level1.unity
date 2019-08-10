@@ -256,6 +256,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 1
 --- !u!1 &154788221
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,6 +670,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &362322686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -934,6 +936,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &504509217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1388,6 +1391,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &796573195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1616,6 +1620,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &944176603
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2230,6 +2235,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &1180364582
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2291,6 +2297,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &1206901567
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2918,6 +2925,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &1707895925
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3058,6 +3066,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &1857769175
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3181,6 +3190,7 @@ MonoBehaviour:
   garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
   MusicSource: {fileID: 13614871}
+  isLocked: 0
 --- !u!61 &1911946002
 BoxCollider2D:
   m_ObjectHideFlags: 0

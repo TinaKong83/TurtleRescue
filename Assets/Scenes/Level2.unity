@@ -182,7 +182,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Return to \nMenu\n"
+  m_Text: "Back to \nMenu\n"
 --- !u!222 &70244950
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2486,7 +2486,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back to Menu
+  m_Text: "Back to \nMenu"
 --- !u!222 &2102795644
 CanvasRenderer:
   m_ObjectHideFlags: 0

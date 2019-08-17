@@ -1,7 +1,7 @@
 # TurtleRescue
 
 ## Overview
-Turtle Rescue is a mobile game designed to illustrate the damaging effects of climate change on marine life and beaches. 
+Turtle Rescue is a mobile game designed to illustrate the damaging effects of climate change on marine life and beaches. The user plays as a newborn turtle, attempting to navigate a beach and ocean ravaged by climate change.
 
 ## Demonstration 
 insert gifs here

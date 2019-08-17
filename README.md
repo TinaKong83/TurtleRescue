@@ -22,7 +22,7 @@ Future levels that are being worked on will show how else the effects of global 
 
 ### How to help the environment out
 After passing each level, the user can redirect to a page of nonprofit organizations dedicated towards preserving marine life. Clicking on each charity icon will redirect the user to the organization's website, listing ways a user can volunteer or donate. 
-![Charity image](Users/ayushisrivastava/Downloads/CharityPage.jpg?raw=true "Scene showing charities and real life impacts")
+![CharityPage](https://user-images.githubusercontent.com/20648029/63208070-e57e8180-c084-11e9-9a93-dfa7e9f77f18.jpg)
 
 ## Tech used
 Built with Unity and C#

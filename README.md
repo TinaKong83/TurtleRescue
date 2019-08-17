@@ -7,17 +7,16 @@ Turtle Rescue is a mobile game designed to illustrate the damaging effects of cl
 ### Level 1
 In Level 1, the user clears a path for the turtle by dragging and dropping pieces of litter from the beach into the trash can. The turtle moves forward with each step, and reaches the ocean once all litter has been cleared. 
 
-![](Demo/Level2.gif)
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![](Demo/Level1.gif)
 
 ### Level 2
 In Level 2, the user is challenged to differentiate between jellyfish and plastic bags carelessly tossed into the ocean. Both appear similar to sea turtles. However, while jellyfish is considered prey, getting caught in and/or eating plastic bags are life threatening to turtles.
 
-![PracticeRound](Demo/PracticeRound.gif)
+![PracticeRound](Demo/ActualPracticeRound.gif)
 
 The user will also need to dodge sharks by using their device's accelerometer. Shark bites are devastating to turtles which is why turtles try to avoid them but climate change has affected sea temperatures and migration cycles of sharks resulting in unfortunate meetings. 
 
-<img src='https://gyazo.com/a68aad72fb84d7402cad3baac88ca203?fbclid=IwAR1i5LIP56E3BRJKK_6oL915491RJmuLeYBvRI998lhWk0_1cRJlRZjJYLw' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![](Demo/Level2.gif)
 
 ### Future Levels
 Future levels that are being worked on will show how else the effects of global warming and pollution affect the lives of sea turtles in more phases of their life.

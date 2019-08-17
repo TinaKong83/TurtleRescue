@@ -13,7 +13,7 @@ In Level 1, the user clears a path for the turtle by dragging and dropping piece
 ### Level 2
 In Level 2, the user is challenged to differentiate between jellyfish and plastic bags carelessly tossed into the ocean. Both appear similar to sea turtles. However, while jellyfish is considered prey, getting caught in and/or eating plastic bags are life threatening to turtles.
 
-<img src='https://gyazo.com/c9542eff50fe46bd67a7c9ddae3e5e2d?fbclid=IwAR0iVaCpT93by8eSP8BvxD6uQVW2DMqJJfWtBcWE5PP4lQ9pNRCF2st4Zaw' width='' alt='Video Walkthrough' />
+![PracticeRound](Demo/PracticeRound.gif)
 
 The user will also need to dodge sharks by using their device's accelerometer. Shark bites are devastating to turtles which is why turtles try to avoid them but climate change has affected sea temperatures and migration cycles of sharks resulting in unfortunate meetings. 
 

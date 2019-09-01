@@ -11,14 +11,18 @@ public class JellyFishMover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timer = 55f;
+        timer = 50f;
     }
 
     // Update is called once per frame
     void Update()
     {
         timer -= Time.deltaTime;
-        if (timer <= 0)
+        if (ui.gameOver)
+        {
+            Destroy(gameObject);
+        }
+        else if (timer <= 0)
         {
             transform.Translate(new Vector3(0, 1, 0) * -speed * Time.deltaTime);
 

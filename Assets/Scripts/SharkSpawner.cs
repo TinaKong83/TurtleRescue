@@ -6,10 +6,12 @@ public class SharkSpawner : MonoBehaviour
 {
     public GameObject shark;
     public float maxPos = 2f;
-    float delayTimer = 8f;
-    float counter = 0f;  
+    float delayTimer = 7f;
+    float counter;  
     float timer;
-    int sharks; 
+    int sharks;
+    float[] numbers;
+    public UIManagerLevel2 ui;
 
     // Start is called before the first frame update
     void Start()
@@ -25,11 +27,11 @@ public class SharkSpawner : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0)
         {
-            if (counter <= 5)
+            if (counter <= 4)
             {
                 counter += 1f;
             }
-            if (sharks < 16)
+            if (sharks < 16 && !ui.gameOver)
             {
                 MakeSharks(); 
             }
@@ -39,7 +41,8 @@ public class SharkSpawner : MonoBehaviour
 
     void MakeSharks()
     {
-        Vector3 sharkPos = new Vector3(Random.Range(-maxPos, maxPos), transform.position.y, transform.position.z);
+        float x = Random.Range(-maxPos, maxPos); 
+        Vector3 sharkPos = new Vector3(x, transform.position.y, transform.position.z);
         Instantiate(shark, sharkPos, transform.rotation);
         sharks += 1; 
     }

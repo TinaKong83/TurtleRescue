@@ -5,7 +5,6 @@ using UnityEngine;
 public class TurtleLevel1 : MonoBehaviour
 {
     public float speed = 1f;
-    public UIManagerLevel1 ui; 
 
     // Start is called before the first frame update
     void Start()
@@ -22,17 +21,7 @@ public class TurtleLevel1 : MonoBehaviour
             transform.Translate(0, speed * Time.deltaTime, 0);
 
         }
-       
-    }
 
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.tag == "Trash")
-        {
-            print("Hit");
-            Destroy(gameObject);
-            ui.GameOverActivated();
-        }
     }
 
 }

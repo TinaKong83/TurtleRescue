@@ -173,7 +173,10 @@ MonoBehaviour:
 '
     - In Level 1, you will help a newly born turtle navigate its way to the ocean
       by dragging and dropping litter into the trash can.
-    - Be sure the turtle reaches the ocean before your time is up! Good luck!
+    - 'Be sure the turtle reaches the ocean before your time is up! And don''t let
+      the litter touch the turtle!
+
+      Good luck!'
 --- !u!114 &26587593
 MonoBehaviour:
   m_ObjectHideFlags: 0

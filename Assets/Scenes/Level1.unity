@@ -249,14 +249,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 13614870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cabe9ef73d6829459f4abf2d5149475, type: 3}
+  m_Script: {fileID: 11500000, guid: 18fd05f9945e54d6081631d026d50c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turtlePosition: {fileID: 0}
-  garbageCanPlace: {fileID: 684677232}
   MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
-  MusicSource: {fileID: 13614871}
-  isLocked: 1
+  MusicSource: {fileID: 1099274325}
 --- !u!1 &144664634
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,6 +928,7 @@ GameObject:
   - component: {fileID: 362322687}
   - component: {fileID: 362322686}
   - component: {fileID: 362322685}
+  - component: {fileID: 362322689}
   m_Layer: 0
   m_Name: trashIcon8
   m_TagString: Trash
@@ -952,9 +950,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
-  MusicSource: {fileID: 13614871}
   isLocked: 0
+  ui: {fileID: 674822265}
 --- !u!61 &362322686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -968,7 +965,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.23921156, y: 0.44535327}
+  m_Offset: {x: -0.013617456, y: 0.093387604}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -979,7 +976,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7623844, y: 4.229295}
+  m_Size: {x: 1.6065952, y: 3.525363}
   m_EdgeRadius: 0
 --- !u!212 &362322687
 SpriteRenderer:
@@ -1037,12 +1034,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362322684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08, y: -2.4, z: 0}
+  m_LocalPosition: {x: 0.4, y: -1.96, z: 0}
   m_LocalScale: {x: 0.55106956, y: 0.39585242, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &362322689
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362322684}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &396873754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,9 +1215,10 @@ GameObject:
   - component: {fileID: 504509218}
   - component: {fileID: 504509217}
   - component: {fileID: 504509216}
+  - component: {fileID: 504509220}
   m_Layer: 0
   m_Name: trashIcon7
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1218,9 +1237,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
-  MusicSource: {fileID: 13614871}
   isLocked: 0
+  ui: {fileID: 674822265}
 --- !u!61 &504509217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1234,7 +1252,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.20381236, y: 0.051586032}
+  m_Offset: {x: -0.02322033, y: 0.051586032}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1245,7 +1263,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9701724, y: 3.4692123}
+  m_Size: {x: 1.6089883, y: 3.4692123}
   m_EdgeRadius: 0
 --- !u!212 &504509218
 SpriteRenderer:
@@ -1303,12 +1321,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504509215}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.24, y: -1.86, z: 0}
+  m_LocalPosition: {x: -1.42, y: -1.46, z: 0}
   m_LocalScale: {x: 0.55106956, y: 0.39585242, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &504509220
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504509215}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &520182210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,6 +1573,7 @@ GameObject:
   - component: {fileID: 796573196}
   - component: {fileID: 796573195}
   - component: {fileID: 796573194}
+  - component: {fileID: 796573198}
   m_Layer: 0
   m_Name: trashIcon5
   m_TagString: Trash
@@ -1555,9 +1595,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
-  MusicSource: {fileID: 13614871}
   isLocked: 0
+  ui: {fileID: 674822265}
 --- !u!61 &796573195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1571,7 +1610,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.30046862, y: 0.48103452}
+  m_Offset: {x: -0.039865136, y: 0.092296004}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1582,7 +1621,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.222589, y: 4.157931}
+  m_Size: {x: 2.3886573, y: 2.89453}
   m_EdgeRadius: 0
 --- !u!212 &796573196
 SpriteRenderer:
@@ -1640,12 +1679,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796573193}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.497, y: 2.115, z: 0}
+  m_LocalPosition: {x: -0.12, y: 2.15, z: 0}
   m_LocalScale: {x: 0.3818781, y: 0.4096074, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &796573198
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796573193}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &887995230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1766,9 +1826,10 @@ GameObject:
   - component: {fileID: 944176604}
   - component: {fileID: 944176603}
   - component: {fileID: 944176602}
+  - component: {fileID: 944176606}
   m_Layer: 0
   m_Name: trashIcon3
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1787,9 +1848,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
-  MusicSource: {fileID: 13614871}
   isLocked: 0
+  ui: {fileID: 674822265}
 --- !u!61 &944176603
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1872,12 +1932,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 944176601}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.72, y: 1.68, z: 0}
+  m_LocalPosition: {x: 1.76, y: 1.72, z: 0}
   m_LocalScale: {x: 0.462636, y: 0.43218002, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &944176606
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944176601}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &949957817
 GameObject:
   m_ObjectHideFlags: 0
@@ -2319,9 +2400,10 @@ GameObject:
   - component: {fileID: 1180364579}
   - component: {fileID: 1180364582}
   - component: {fileID: 1180364581}
+  - component: {fileID: 1180364583}
   m_Layer: 0
   m_Name: trashIcon2
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2382,7 +2464,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180364578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.78, y: -3.19, z: 0}
+  m_LocalPosition: {x: -1.68, y: -3.15, z: 0}
   m_LocalScale: {x: 0.490625, y: 0.44221845, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2402,9 +2484,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
-  MusicSource: {fileID: 13614871}
   isLocked: 0
+  ui: {fileID: 674822265}
 --- !u!61 &1180364582
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2418,7 +2499,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.35721767, y: -0.3963194}
+  m_Offset: {x: 0.007896066, y: -0.103761554}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2429,8 +2510,29 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.3128989, y: 3.0218344}
+  m_Size: {x: 2.5826714, y: 2.7067726}
   m_EdgeRadius: 0
+--- !u!50 &1180364583
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180364578}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1206901565
 GameObject:
   m_ObjectHideFlags: 0
@@ -2443,6 +2545,7 @@ GameObject:
   - component: {fileID: 1206901568}
   - component: {fileID: 1206901567}
   - component: {fileID: 1206901566}
+  - component: {fileID: 1206901570}
   m_Layer: 0
   m_Name: trashIcon9
   m_TagString: Trash
@@ -2464,9 +2567,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
-  MusicSource: {fileID: 13614871}
   isLocked: 0
+  ui: {fileID: 674822265}
 --- !u!61 &1206901567
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2480,7 +2582,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.58035314, y: 0.3302964}
+  m_Offset: {x: 0.006254554, y: 0.089019656}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2491,7 +2593,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.9592936, y: 3.2663982}
+  m_Size: {x: 2.534675, y: 2.7838447}
   m_EdgeRadius: 0
 --- !u!212 &1206901568
 SpriteRenderer:
@@ -2549,12 +2651,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206901565}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.24, y: 0.44, z: 0}
+  m_LocalPosition: {x: 0.18, y: 0.34, z: 0}
   m_LocalScale: {x: 0.47502398, y: 0.4124683, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1206901570
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206901565}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1394050027
 GameObject:
   m_ObjectHideFlags: 0
@@ -3088,9 +3211,10 @@ GameObject:
   - component: {fileID: 1707895922}
   - component: {fileID: 1707895925}
   - component: {fileID: 1707895924}
+  - component: {fileID: 1707895926}
   m_Layer: 0
   m_Name: trashIcon4
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3151,7 +3275,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707895921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.096, y: 1.808, z: 0}
+  m_LocalPosition: {x: -2.02, y: 2.82, z: 0}
   m_LocalScale: {x: 0.43038532, y: 0.31311926, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3171,9 +3295,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
-  MusicSource: {fileID: 13614871}
   isLocked: 0
+  ui: {fileID: 674822265}
 --- !u!61 &1707895925
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3187,7 +3310,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.26349273, y: 0}
+  m_Offset: {x: 0.013985515, y: 0.09534836}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3198,8 +3321,29 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.48507, y: 5.12}
+  m_Size: {x: 1.9301133, y: 4.1665087}
   m_EdgeRadius: 0
+--- !u!50 &1707895926
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707895921}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1801460846
 GameObject:
   m_ObjectHideFlags: 0
@@ -3291,9 +3435,10 @@ GameObject:
   - component: {fileID: 1857769176}
   - component: {fileID: 1857769175}
   - component: {fileID: 1857769174}
+  - component: {fileID: 1857769178}
   m_Layer: 0
   m_Name: trashIcon6
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3312,9 +3457,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
-  MusicSource: {fileID: 13614871}
   isLocked: 0
+  ui: {fileID: 674822265}
 --- !u!61 &1857769175
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3328,7 +3472,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.24723297, y: 0.6844063}
+  m_Offset: {x: -0.0012751818, y: 0.11840439}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3339,7 +3483,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.4945312, y: 3.7511873}
+  m_Size: {x: 2.0026157, y: 2.6191835}
   m_EdgeRadius: 0
 --- !u!212 &1857769176
 SpriteRenderer:
@@ -3397,12 +3541,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857769173}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.14, y: -0.51, z: 0}
+  m_LocalPosition: {x: -1.98, y: 0.29, z: 0}
   m_LocalScale: {x: 0.4450794, y: 0.49231657, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1857769178
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857769173}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1861922174
 GameObject:
   m_ObjectHideFlags: 0
@@ -3494,9 +3659,10 @@ GameObject:
   - component: {fileID: 1911946004}
   - component: {fileID: 1911946002}
   - component: {fileID: 1911946001}
+  - component: {fileID: 1911946003}
   m_Layer: 0
   m_Name: trashIcon1
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3515,9 +3681,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
-  MusicSource: {fileID: 13614871}
   isLocked: 0
+  ui: {fileID: 674822265}
 --- !u!61 &1911946002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3531,7 +3696,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.114703655, y: -0.43553042}
+  m_Offset: {x: -0.08653462, y: 0.06982827}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3542,8 +3707,29 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.9635758, y: 4.000064}
+  m_Size: {x: 2.2033432, y: 2.504201}
   m_EdgeRadius: 0
+--- !u!50 &1911946003
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911946000}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!212 &1911946004
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3600,7 +3786,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911946000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.64, y: -0.44, z: 0}
+  m_LocalPosition: {x: 1.72, y: -1.04, z: 0}
   m_LocalScale: {x: 0.4450794, y: 0.49231657, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3620,7 +3806,6 @@ GameObject:
   - component: {fileID: 2134361457}
   - component: {fileID: 2134361456}
   - component: {fileID: 2134361458}
-  - component: {fileID: 2134361459}
   m_Layer: 0
   m_Name: leftMoved
   m_TagString: Player
@@ -3722,7 +3907,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.8
-  ui: {fileID: 674822265}
 --- !u!61 &2134361457
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3761,24 +3945,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d9d89751e24f49f1a315602f08fc986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &2134361459
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134361452}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0

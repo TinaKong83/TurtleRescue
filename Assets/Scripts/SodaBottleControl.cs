@@ -9,18 +9,21 @@ public class SodaBottleControl : MonoBehaviour
     [SerializeField]
     private Transform garbageCanPlace;
 
-    public AudioClip MusicClip; //holds our music and sound effects
-    public AudioSource MusicSource;
+    AudioLevel1 aud; 
 
     private Vector2 initialPosition;
     private float deltaX, deltaY;
     public bool isLocked;
-    //public float speed = 1f;
+    private GameObject turtle;
+
+    public UIManagerLevel1 ui;
 
     // Start is called before the first frame update
     void Start()
     {
         initialPosition = transform.position;
+        turtle = GameObject.Find("leftMoved");
+       
     }
 
     // Touch phase documentation: https://docs.unity3d.com/ScriptReference/TouchPhase.html
@@ -28,6 +31,13 @@ public class SodaBottleControl : MonoBehaviour
     void Update()
     {
         //transform.Translate(0, -speed * Time.deltaTime, 0);
+
+
+        if (GetComponent<Renderer>().bounds.Intersects(turtle.GetComponent<Renderer>().bounds))
+        {
+            ui.GameOverActivated();
+            Destroy(turtle);
+        }
 
         if (Input.touchCount > 0 && !isLocked)
         {
@@ -59,9 +69,9 @@ public class SodaBottleControl : MonoBehaviour
                     {
                         transform.position = new Vector2(garbageCanPlace.position.x, garbageCanPlace.position.y);
                         turtlePosition.Translate(0.0f, 0.5f, 0.0f);
-                        MusicSource.clip = MusicClip;
-                        MusicSource.Play();
+                        aud.Play(); 
                         isLocked = true;
+                        Destroy(gameObject);
                     }
                     else
                     {

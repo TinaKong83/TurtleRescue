@@ -32,8 +32,6 @@ public class SodaBottleControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.Translate(0, -speed * Time.deltaTime, 0);
-
         /*
         if (GetComponent<Renderer>().bounds.Intersects(turtle.GetComponent<Renderer>().bounds))
         {
@@ -41,13 +39,6 @@ public class SodaBottleControl : MonoBehaviour
             //Destroy(turtle);
             return;
         } */
-        /*
-        if (Mathf.Abs(turtlePosition.position.x - transform.position.x) <= 1f
-            && Mathf.Abs(turtlePosition.position.y - transform.position.y) <= 1f)
-        {
-            ui.GameOverActivated();
-            return;
-        }*/
 
             if (Input.touchCount > 0 && !isLocked)
         {
@@ -74,8 +65,8 @@ public class SodaBottleControl : MonoBehaviour
                     }
                     break;
                 case TouchPhase.Ended:
-                    if (Mathf.Abs(turtlePosition.position.x - transform.position.x) <= 1.5f 
-                        && Mathf.Abs(turtlePosition.position.y - transform.position.y) <= 1.5f)
+                    if (Mathf.Abs(turtlePosition.position.x - transform.position.x) <= 1f 
+                        && Mathf.Abs(turtlePosition.position.y - transform.position.y) <= 1f)
                     {
                         ui.GameOverActivated();
                         return;

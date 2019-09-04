@@ -122,7 +122,6 @@ GameObject:
   m_Component:
   - component: {fileID: 13614872}
   - component: {fileID: 13614871}
-  - component: {fileID: 13614873}
   m_Layer: 0
   m_Name: TrashAudio
   m_TagString: Untagged
@@ -240,20 +239,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &13614873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13614870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18fd05f9945e54d6081631d026d50c09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MusicClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
-  MusicSource: {fileID: 1099274325}
 --- !u!1 &144664634
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,7 +935,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  isLocked: 0
+  TrashClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
+  TrashSource: {fileID: 13614871}
   ui: {fileID: 674822265}
 --- !u!61 &362322686
 BoxCollider2D:
@@ -1237,7 +1223,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  isLocked: 0
+  TrashClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
+  TrashSource: {fileID: 13614871}
   ui: {fileID: 674822265}
 --- !u!61 &504509217
 BoxCollider2D:
@@ -1595,7 +1582,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  isLocked: 0
+  TrashClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
+  TrashSource: {fileID: 13614871}
   ui: {fileID: 674822265}
 --- !u!61 &796573195
 BoxCollider2D:
@@ -1848,7 +1836,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  isLocked: 0
+  TrashClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
+  TrashSource: {fileID: 13614871}
   ui: {fileID: 674822265}
 --- !u!61 &944176603
 BoxCollider2D:
@@ -2484,7 +2473,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  isLocked: 0
+  TrashClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
+  TrashSource: {fileID: 13614871}
   ui: {fileID: 674822265}
 --- !u!61 &1180364582
 BoxCollider2D:
@@ -2567,7 +2557,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  isLocked: 0
+  TrashClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
+  TrashSource: {fileID: 13614871}
   ui: {fileID: 674822265}
 --- !u!61 &1206901567
 BoxCollider2D:
@@ -3295,7 +3286,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  isLocked: 0
+  TrashClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
+  TrashSource: {fileID: 13614871}
   ui: {fileID: 674822265}
 --- !u!61 &1707895925
 BoxCollider2D:
@@ -3457,7 +3449,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  isLocked: 0
+  TrashClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
+  TrashSource: {fileID: 13614871}
   ui: {fileID: 674822265}
 --- !u!61 &1857769175
 BoxCollider2D:
@@ -3681,7 +3674,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turtlePosition: {fileID: 2134361455}
   garbageCanPlace: {fileID: 684677232}
-  isLocked: 0
+  TrashClip: {fileID: 8300000, guid: 8f9ea082c853fb9479e89988469b8792, type: 3}
+  TrashSource: {fileID: 13614871}
   ui: {fileID: 674822265}
 --- !u!61 &1911946002
 BoxCollider2D:

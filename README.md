@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-"# TurtleRescue" 
+
 "# TurtleRescue" 
 =======
 # TurtleRescue
@@ -38,5 +37,4 @@ Built with Unity and C#
 ## Future improvements
 One goal would be to reorganize the charity pages. Our current design is text-heavy and cluttered. 
 We would plan on making the animations more fluid (of the turtle avatar in levels 1 and 2), especially in terms of different animations of the turtle for when the turtle is swimming vs when it is walking. We also want to implement animations for the swimming sharks, jellyfish, and plastic bag in level 2.
->>>>>>> 50161e3c6bacd12c15672a4e92c0f3d85a325210
-"# hobbies_at_home" 
+
